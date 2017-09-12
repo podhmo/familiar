@@ -1,4 +1,11 @@
 newtypes:
-  file:
+  filename:
     type: string
-    description: filename
+
+structs:
+  file:
+    properties:
+      name:
+        type: "#/newtypes/filename"
+      body:
+        type: "string"
