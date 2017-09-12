@@ -1,8 +1,8 @@
-gen:
+gen: clean
 	venv/bin/designer design/main.yaml | bash -x
 
 clean:
-	rm -rf gen/*
+	rm -rf app/gen/*
 
 setup:
 	$(MAKE) -C venv setup

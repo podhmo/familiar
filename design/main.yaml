@@ -8,4 +8,19 @@ structs:
       name:
         type: "#/newtypes/filename"
       body:
-        type: "string"
+        type: string
+
+events:
+  gistCreated:
+    properties:
+      files:
+        type: array
+        items: "#/structs/file"
+
+
+actions:
+  create-gist:
+    event: "#/events/gistCreated"
+    conf:
+      accessToken:
+        type: string
