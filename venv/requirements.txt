@@ -1,2 +1,3 @@
 prestring
 -e git+https://github.com/podhmo/goaway@master#egg=goaway
+-e ./designer

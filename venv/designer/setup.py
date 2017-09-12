@@ -2,6 +2,7 @@
 
 import os
 import sys
+import fastentrypoints
 
 from setuptools import setup, find_packages
 here = os.path.abspath(os.path.dirname(__file__))
@@ -45,5 +46,7 @@ setup(
     tests_require=tests_require,
     test_suite="designer.tests",
     entry_points="""
+    [console_scripts]
+    designer=designer.__main__:main
 """
 )
