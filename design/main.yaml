@@ -1,3 +1,4 @@
 newtypes:
   file:
     type: string
+    description: filename
