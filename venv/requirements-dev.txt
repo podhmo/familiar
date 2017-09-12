@@ -1,0 +1,3 @@
+flake8
+korpokkur
+-e git+https://github.com/podhmo/yayapf@master#egg=yayapf
